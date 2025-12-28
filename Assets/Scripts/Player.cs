@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        PassaDados.zerarTudo = false;
 
         //Para (Startar) o (Rigidbody) || E a animação de explosão
         body = GetComponent<Rigidbody2D>();

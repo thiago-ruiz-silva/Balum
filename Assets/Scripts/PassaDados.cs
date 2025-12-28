@@ -56,6 +56,8 @@ public class PassaDados : MonoBehaviour
     //Pelo script (GameOver) || Lembrar de nos próximos jogos melhorar essa parte
     public Text recorde, pontosJogar;
 
+    public static bool zerarTudo;
+
     void Start()
     {
 

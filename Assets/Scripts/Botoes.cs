@@ -20,11 +20,12 @@ public class Botoes : MonoBehaviour
     }
 
     //Método para fechar o app
-    public void Sair ()
+    public void Zerar ()
     {
 
-        //Para encerrar o jogo
-        Application.Quit();
+        PlayerPrefs.SetInt("recorde", 0);
+
+        PassaDados.zerarTudo = true;
     }
 
     //Método que chama a cena *CenaJogar*

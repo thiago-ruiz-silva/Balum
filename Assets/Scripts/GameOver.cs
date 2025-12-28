@@ -12,18 +12,28 @@ public class GameOver : MonoBehaviour
     public Text pontuacao, recorde;
 
     void Start()
-    {        
-        
-        
+    {
+       
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (PassaDados.zerarTudo)
+        {
 
-        //Para passar os valores para o campo de texto da (Cena)
-        pontuacao.text = PassaDados.pontos.ToString();
+            //Para passar os valores para o campo de texto da (Cena)
+            pontuacao.text = "0";
 
-        recorde.text = PassaDados.maximo.ToString();
+            recorde.text = "0";
+        }
+        else {
+
+            //Para passar os valores para o campo de texto da (Cena)
+            pontuacao.text = PassaDados.pontos.ToString();
+
+            recorde.text = PassaDados.maximo.ToString();
+        }        
     }
 }
